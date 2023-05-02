@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosclean Detailing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Ruslan+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <header>
+            <a href="./index.html" class="logo0"><img src="../assets/IMG_0088-PhotoRoom.png-PhotoRoom.png" class="logo"><div>MOSCLEAN DETAILING</div></a>            
+            <ul class="menu">
+                <li><a href="">ЦЕНЫ</a></li>
+                <li><a href="">О НАС</a></li>
+                <li><a href="">УСЛУГИ</a></li>
+                <li><a href="">ОТЗЫВЫ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="menu2" @click="openMenu()"></div>
+            <div class="triangle" v-if="ifOpenedMenu"></div>
+            <div class="menuOptions" v-if="ifOpenedMenu">
+                <div><a href="">ЦЕНЫ</a></div>
+                <div><a href="">О НАС</a></div>
+                <div><a href="">УСЛУГИ</a></div>
+                <div><a href="">ОТЗЫВЫ</a></div>
+                <div><a href="">КОНТАКТЫ</a></div>
+            </div>
+    </header>
+    <div class="mainImg">
+        <img class="main-picture"
+            sizes="(max-width: 1770px) 100vw, 1770px"
+            srcset="
+            ../assets/photo-1552519507-da3b142c6e3d_nhxht2_c_scale,w_200.jpg 200w,
+            ../assets/photo-1552519507-da3b142c6e3d_nhxht2_c_scale,w_1227.jpg 1227w,
+            ../assets/photo-1552519507-da3b142c6e3d_nhxht2_c_scale,w_1770.jpg 1770w"
+            src="../assets/photo-1552519507-da3b142c6e3d_nhxht2_c_scale,w_1770.jpg"
+            alt="">
+        <div class="company">
+            <!-- <img src="../assets/photo1681208333 (2)-PhotoRoom.png-PhotoRoom.png" class="head-image" alt="">
+            <p class="MI-text1 MI-text1-2">DETAILING</p>
+            <a class="MI-text2" href=""><p class="MI-text2-p">свяжитесь с нами!</p></a> -->
+            <!-- href="tel:+7917515-55-15" -->
+        </div>
+ 
+    </div>
+</body>
+</html>
