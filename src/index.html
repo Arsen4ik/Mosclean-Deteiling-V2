@@ -8,33 +8,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Ruslan+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="head.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="head.css"> -->
     <link rel="stylesheet" href="index.css">
     <script src="https://unpkg.com/vue@next" defer></script>
     <script src="index.js" defer></script>
 
 </head>
 <body>
+    <!-- // header -->
     <header>
-            <a href="./index.html" class="logo0"><img src="../assets/IMG_0088-PhotoRoom.png-PhotoRoom.png" class="logo"><div>MOSCLEAN DETAILING</div></a>            
-            <ul class="menu">
-                <li><a href="">ЦЕНЫ</a></li>
-                <li><a href="">О НАС</a></li>
-                <li><a href="">УСЛУГИ</a></li>
-                <li><a href="">ОТЗЫВЫ</a></li>
-                <li><a href="">КОНТАКТЫ</a></li>
-            </ul>
-            <div class="menu2" @click="openMenu()"></div>
-            <div class="triangle" v-if="ifOpenedMenu"></div>
-            <div class="menuOptions" v-if="ifOpenedMenu">
-                <div><a href="">ЦЕНЫ</a></div>
-                <div><a href="">О НАС</a></div>
-                <div><a href="">УСЛУГИ</a></div>
-                <div><a href="">ОТЗЫВЫ</a></div>
-                <div><a href="">КОНТАКТЫ</a></div>
-            </div>
+            <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #4e4e4e;">
+                <a href=""><img src="../assets/IMG_0088-PhotoRoom.png-PhotoRoom.png" class="logo"></a>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                    aria-expanded="false" aria-label="Toggle navigation"><img src="../assets/menu-svgrepo-com.svg" class="open-menu" alt=""></button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MOSCLEAN DETAILING</a>
+                        </li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href="">ЦЕНЫ</a></li>
+                        <li><a href="">УСЛУГИ</a></li>
+                        <li><a href="">ОТЗЫВЫ</a></li>
+                        <li><a href="">КОНТАКТЫ</a></li>
+                    </ul>
+                </div>
+            </nav>
     </header>
-    <div class="mainImg">
+    <!-- // main part -->
+    <section class="mainImg">
         <img class="main-picture"
             sizes="(max-width: 1770px) 100vw, 1770px"
             srcset="
@@ -49,6 +54,163 @@
             <a class="MI-text2" href=""><p class="MI-text2-p">свяжитесь с нами!</p></a>
         </div>
  
-    </div>
+    </section>
+    <!-- // about -->
+    <section class="about-section">
+        <!-- <img src="../assets/photo1681208333 (2)-PhotoRoom.png-PhotoRoom.png" class="head-image" alt=""> -->
+        <div class="zaglav">
+            <p class="zaglav-p">О нас</p>
+            <p>
+                Мы предлагаем комплексные услуги по улучшению внешнего вида автомобиля и его защите. 
+                У нас большой опыт в сфере детейлинг-услуг, индивидуальный подход к каждому клиенту, 
+                проводят работу быстро и качественно, с полным соблюдением рекомендованной технологии. 
+                Мы сэкономим Ваше время и деньги при обращении к нам за услугами исправления повреждений кузова автомобиля, 
+                сделаем максимум для получения желаемого результата. Заявки принимаем по телефону или в социальных сетях. 
+                Работаем без выходных. У нас:
+            </p>
+            <ul>
+                <li>Специализированное оборудование</li>
+                <li>Опытные мастера</li>
+                <li>Качественные материалы</li>
+                <li>Комплексное предоставление услуг, гарантия</li>
+            </ul> 
+        </div>
+        <div class="list">
+            <p>Дополнительно</p>
+            <ul>
+                <a href=""><p>ознакомьтесь с предлагаемыми нами услугами и примерами наших работ.</p></a>
+                <a href=""><p>подробнее об услугах и ценах.</p></a>
+                <a href=""><p>а также как связаться с нами и узнать где мы находимся.</p></a> 
+            </ul>
+        </div>
+    </section>
+    <!-- // options part -->
+
+    <!-- <section>
+        <p class="zaglav-p">Услуги которые мы предоставляем:</p>
+        <div class="option option1">
+            <p>удаление вмятин без покраски</p>
+            <div class="zaglav">
+                <p>Все что Вам нужно знать об этой услуге, вы уже прочитали в названии, 
+                    главное условие удаления вмятин без покраски, отсутствие сколов и трещин на ЛКП, 
+                    но и в таких случаях при согласовании с клиентами мы проводим работы.</p>
+            </div>
+            <div class="primers">
+                <div class="primer primer1"> 
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer2">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer3">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer4">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer5">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="option option2">
+            <p>удаление царапин без покраски</p>
+            <div class="zaglav">
+                <p>Удаление царапин - услуга позволяющая удалить глубокие и объёмные царапины используя
+                     специальные материалы для сохранения заводского окраса детали.</p>
+            </div>
+            <div class="primers">
+                <div class="primer primer1"> 
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer2">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer3">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer4">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer5">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer6"> 
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+                <div class="primer primer7">
+                    <div><p>до</p></div>
+                    <div><p>после</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="option option3">
+            <p>восстановительная полировка</p>
+            <div class="zaglav">
+                <p>Восстановительная полировка предназначена для восстановления эстетических характеристик кузова авто — 
+                    она устраняет мелкие царапины, потёртости, трещины, следы от птичьего помета и почек деревьев,
+                     возвращает лакокрасочному покрытию блеск и гладкость.
+                     Преимуществ у услуги множество — с помощью нее автомобилю можно вернуть «вторую жизнь»,
+                     чтобы наслаждаться визуальным эффектом или выгодно продать в будущем.</p>
+            </div>
+            <div class="primers">
+                <div class="primer primer1"></div>
+                <div class="primer primer2"></div>
+                <div class="primer primer3"></div>
+            </div>
+        </div>
+        <div class="option option4">
+            <p>Защитные покрытия</p>
+            <div class="zaglav">
+                <p>Восстановительная полировка предназначена для восстановления эстетических характеристик кузова авто — 
+                    она устраняет мелкие царапины, потёртости, трещины, следы от птичьего помета и почек деревьев,
+                     возвращает лакокрасочному покрытию блеск и гладкость.
+                     Преимуществ у услуги множество — с помощью нее автомобилю можно вернуть «вторую жизнь»,
+                     чтобы наслаждаться визуальным эффектом или выгодно продать в будущем.</p>
+            </div>
+            <div class="primers">
+                <div class="primer primer1"></div>
+                <div class="primer primer2"></div>
+            </div>
+        </div>
+    </section> -->
+    
+    <!-- // footer -->
+    <!-- <footer>
+        <section>
+            <a href="tel:+7917515-55-15">
+                <div class="footer-img footer-img1"></div>
+            </a><a href="https://youtube.com/@MOSCLEAN-DETAILING" target="_blank">
+                <div class="footer-img footer-img2"></div>
+            </a><a href="https://instagram.com/mosclean_detailing?igshid=YmMyMTA2M2Y=" target="_blank">
+                <div class="footer-img footer-img3"></div>
+            </a><a href="mailto:mosclean-detailing@yandex.ru" target="_blank">
+                <div class="footer-img footer-img4"></div>
+            </a>
+        </section>
+        <div id="copi">
+        &copy;MOSCLEAN DETAILING {{ date }}
+        </div>
+    </footer> -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
 </body>
 </html>
