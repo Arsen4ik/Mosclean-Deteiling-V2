@@ -151,220 +151,6 @@ body {
 
 
 
-
-
-
-@media screen and (min-width: 539px) and (max-width: 992px) {
-    .mainImg {
-        /* height: 480px; */
-        height: auto;
-        /* margin-bottom: 5px; */
-    }
-
-    .secPict0-p {
-        font-size: 25px;
-    }
-    .secPict0 {
-        height: 100px;
-    }
-    .secPict {
-        margin-bottom: 10px;
-    }
-    .secPict-0 {
-        height: 100px;
-        padding: 0;
-    }
-    .secPict-0 p{
-        font-size: medium;
-    }
-    .MI-text1 {
-        font-size: 30px;
-    }
-    .MI-text2 {
-        width: 50%;
-        height: 40px;
-    }
-    .MI-text2 p {
-        font-size: 28px;
-    }
-    footer {
-        margin-top: 25px;
-    }
-    
-    .primer {
-        height: 230px;
-    }
-    .part2 {
-        padding: 0;
-        font-size: 20px;
-        height: 50px;
-    }
-    .MI-text1-2 {
-        font-size: 60px;
-    }
-    .head-image {
-        height: 50px;
-        width: 310px;
-    }
-    .company {
-        top: 15%;
-    }
-    .head-logo {
-        /* height: 21px; */
-        top: 80px;
-        width: 168px;
-    }
-
-}
-
-
-
-@media screen and (max-width: 538px) {
-    .company {
-        top: 15%;
-        font-size: xx-large;
-    }
-    .company p {
-        font-size: 25px;
-    }
-    .secPict0 {
-        height: 70px;
-    }
-    .secPict0-p {
-        font-size: large;
-    }
-    .mainImg {
-        height: auto;
-    }
-
-    .MI-text1 {
-        font-size: 20px;
-    }
-    .MI-text2 {
-        min-width: 155px;
-        width: 40%;
-        height: 30px;
-        border-radius: 5px;
-    }
-    .MI-text2 p {
-        font-size: 15px;
-    }
-    .secPict {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .secPict-0 {
-        width: 75%;
-        height: 30px;
-        padding-top: 5px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .secPict-0 p{
-        font-size: small;
-    }
-
-    .zaglav>p:first-child {
-        font-size: large;
-    }
-    .zaglav>p:last-child {
-        font-size: large;
-    }
-    .zaglav>ul {
-        width: 100%;
-        font-size: large;
-    }
-    .primers>p{
-        font-size: large;
-    }
-    .primer {
-        height: 150px;
-    }
-    header a {
-        font-size: x-small;
-    }
-
-    nav {
-        padding: 0 10px;
-    }
-    footer {
-        margin-top: 20px;
-        height: 130px;
-        gap: 20px;
-    }
-    .part2 {
-        font-size: 10px;
-    }
-    footer section div {
-        width: 30px;
-        height: 40px;
-    }
-    #copi {
-        font-size: large;
-    }
-    .head-image {
-        height: 20px;
-        width: 148px;
-    }
-    .head-logo {
-        /* height: 21px; */
-        top: 70px;
-        width: 128px;
-    }
-    .list ul {
-        padding-left: 0;
-    }
-}
-@media screen and (max-width: 575px) {
-    .menu {
-        padding-left: 0;
-    }
-}
-@media screen and (max-width: 385px) {
-    .company {
-        top: 20%;
-    }
-}
-
-@media screen and (width: 280px) {
-    nav {
-        padding: 0 10px;
-    }
-    header a {
-        font-size: xx-small;
-    }
-    .secPict0-p {
-        font-size: small;
-    }
-    .secPict-0 {
-        height: 45px;
-    }
-    .zaglav>p:first-child {
-        font-size: large;
-    }
-    .zaglav>p:last-child {
-        font-size: medium;
-    }
-    .zaglav>ul {
-        width: 100%;
-        font-size: medium;
-    }
-    .primer {
-        height: 100px;
-    }
-    .primers>p{
-        font-size: medium;
-    }
-    .menu2 {
-        height: 25px;
-        width: 35px;
-    }
-
-}
-
-/* /////////////////////////////// */
-
 .logo {
     /* background-image: url(../assets/IMG_0088-PhotoRoom.png-PhotoRoom.png); */
     /* background-image: url(./MicrosoftTeams-image2.png); */
@@ -513,7 +299,7 @@ footer>div {
     flex-direction: column;
 }
 
-#copi {
+.copy {
     font-family: 'Kelly Slab';
     font-size: x-large;
 }
@@ -524,8 +310,173 @@ footer>div {
     }
 }
 
-@media screen and (max-width: 539px) {
-    header a div {
+
+@media screen and (min-width: 539px) and (max-width: 992px) {
+    .mainImg {
+        /* height: 480px; */
+        height: auto;
+        /* margin-bottom: 5px; */
+    }
+
+    .secPict0-p {
+        font-size: 25px;
+    }
+    .secPict0 {
+        height: 100px;
+    }
+    .secPict {
+        margin-bottom: 10px;
+    }
+    .secPict-0 {
+        height: 100px;
+        padding: 0;
+    }
+    .secPict-0 p{
+        font-size: medium;
+    }
+    .MI-text1 {
+        font-size: 30px;
+    }
+    .MI-text2 {
+        width: 50%;
+        height: 40px;
+    }
+    .MI-text2 p {
+        font-size: 28px;
+    }
+    footer {
+        margin-top: 25px;
+    }
+    
+    .primer {
+        height: 230px;
+    }
+    .part2 {
+        padding: 0;
+        font-size: 20px;
+        height: 50px;
+    }
+    .MI-text1-2 {
+        font-size: 60px;
+    }
+    .head-image {
+        height: 50px;
+        width: 310px;
+    }
+    .company {
+        top: 15%;
+    }
+    .head-logo {
+        /* height: 21px; */
+        top: 80px;
+        width: 168px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 538px) {
+    .company {
+        top: 15%;
+        font-size: xx-large;
+    }
+    .company p {
+        font-size: 25px;
+    }
+    .secPict0 {
+        height: 70px;
+    }
+    .secPict0-p {
+        font-size: large;
+    }
+    .mainImg {
+        height: auto;
+    }
+
+    .MI-text1 {
+        font-size: 20px;
+    }
+    .MI-text2 {
+        min-width: 155px;
+        width: 40%;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .MI-text2 p {
+        font-size: 15px;
+    }
+    .secPict {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .secPict-0 {
+        width: 75%;
+        height: 30px;
+        padding-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .secPict-0 p{
+        font-size: small;
+    }
+    .zaglav-p {
+        font-size: x-large;
+    }
+    .zaglav>p:nth-child(2){
+        font-size: medium;
+    }
+    .zaglav>ul:last-child{
+        font-size: medium;
+    }
+    /* .zaglav>p:first-child {
+        font-size: large;
+    } */
+    /* .zaglav>p:last-child {
+        font-size: small;
+    } */
+    /* .zaglav>ul {
+        width: 100%;
+        font-size: large;
+    } */
+    .list>p:first-child {
+        font-size: x-large;
+    }
+    .list>ul:last-child {
+        font-size: medium;
+
+    }
+    .primers>p{
+        font-size: large;
+    }
+    .primer {
+        height: 150px;
+    }
+    header a {
+        font-size: x-small;
+    }
+
+    nav {
+        padding: 0 10px;
+    }
+    .part2 {
+        font-size: 10px;
+    }
+    .list ul {
+        padding-left: 0;
+    }
+    .head-image {
+        height: 20px;
+        width: 148px;
+    }
+    .head-logo {
+        /* height: 21px; */
+        top: 70px;
+        width: 128px;
+    }
+
+    /* header a div {
         font-size: x-small;
     }
     header a {
@@ -533,12 +484,73 @@ footer>div {
     }
     nav {
         padding: 0 10px;
-    }
+    } */
     footer {
-        height: 50px;
-        gap: 20px;
+        height: -100px;
+        /* padding: 0; */
+        /* gap: 20px; */
+        box-sizing: border-box;
     }
-    #copi {
+    .copy {
         font-size: large;
     }
+
+    .footer-img{
+        width: 40px;
+        height: 40px;
+    }
+    footer p {
+        margin: 0;
+    }
+
 }
+@media screen and (max-width: 575px) {
+    .menu {
+        padding-left: 0;
+    }
+}
+@media screen and (max-width: 385px) {
+    .company {
+        top: 20%;
+    }
+}
+
+@media screen and (width: 280px) {
+    nav {
+        padding: 0 10px;
+    }
+    header a {
+        font-size: xx-small;
+    }
+    .secPict0-p {
+        font-size: small;
+    }
+    .secPict-0 {
+        height: 45px;
+    }
+    .zaglav>p:first-child {
+        font-size: large;
+    }
+    .zaglav>p:last-child {
+        font-size: medium;
+    }
+    .zaglav>ul {
+        width: 100%;
+        font-size: medium;
+    }
+    .primer {
+        height: 100px;
+    }
+    .primers>p{
+        font-size: medium;
+    }
+    .menu2 {
+        height: 25px;
+        width: 35px;
+    }
+
+}
+
+/* /////////////////////////////// */
+
+
